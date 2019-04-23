@@ -213,6 +213,7 @@ make the two columns stack on top of each other instead of next to each other
 }
 }
 
+
 /* footer information here 
 --------------------------
 */
@@ -229,4 +230,146 @@ footer {
     bottom: 0;
     border-top: 8px solid #4aaaa5;
     font-size: 12px;
+}
+
+
+/* Set breakpoints at 980px, 768px, and 640px screen widths */
+
+@media only screen and (min-width: 980px) {
+
+  .container {
+  	float: none;
+  	width: 100%;
+    height: auto;
+  }
+
+  	body { 
+  		margin: 0 auto; 
+  	}
+
+  .main {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 980px) and (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .port-links {
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-style: none;
+    float: center;
+  }
+
+	main { 
+    max-width: 100%;
+		margin: 0 auto; 
+  }
+
+  .right1, .left1, p {
+  	max-width: 100%;
+    float: left;
+  }
+
+	.headshot, .headphoto {
+		width: 50%;
+	}
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 640px) {
+  .container {
+    max-width: 600px;
+
+  }
+
+  .port-links {
+    width: 33.3%;
+    float: left;
+    padding: 15px 0px 15px 0px;
+    margin: 0px;
+  }
+
+	main { 
+		max-width: auto;
+  }
+
+  .right1, .left1, p {
+    max-width: auto;
+    float: left;
+  }
+
+
+	.headshot, .headphoto {
+		width: 50px;
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .port-links {
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-style: none;
+    float: center;
+    width: 33.3%;
+    float: left;
+    padding: 15px 0px 15px 0px;
+    margin: 0px;
+  }
+
+	main { 
+		margin: 0 auto; 
+  }
+
+  .right1, .left1, p {
+  	max-width: 100%;
+    float: left;
+  }
+
+  .main-section {
+  	max-width: 100%
+  }
+
+	.headshot, .headphoto {
+    width: 50%;
+  }
+
+
+	nav {
+		float: none;
+		text-align: center;
+    margin: auto;
+	}
+
+	h1 {
+    font-size: auto;
+    		padding-bottom: 0px;
+	}
+
+	body {
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+  header {
+    position: static;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+
+
 }
